@@ -24,6 +24,7 @@ jobs:
       - name: Build and test with Maven
         run: mvn clean verify --file ./simple-api/pom.xml
 
+      #On rerun avec sonarkey ajouté
       - name: SonarQube analysis
         run:  mvn -B verify sonar:sonar -Dsonar.projectKey=Luc-Flament_devops-livecoding -Dsonar.organization=luc-flament -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}  --file ./simple-api/pom.xml
 
