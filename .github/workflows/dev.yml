@@ -1,6 +1,6 @@
 name: CI devops 2024
 on:
-  #to begin you want to launch this job in main branch
+  #to begin you want to launch this job in main branch  et (je rajoute du texte)
   push:
     branches: [ dev ]
   pull_request:
