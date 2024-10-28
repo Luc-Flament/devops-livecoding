@@ -39,7 +39,7 @@ jobs:
         with:
           context: ./http-server
           tags: ${{secrets.DOCKERHUB_USERNAME}}/tp-devops-simple-httpd:latest
-        push:  ${{ github.ref == 'refs/heads/main' }}
+        push: true
 
   test-backend: 
     runs-on: ubuntu-22.04
