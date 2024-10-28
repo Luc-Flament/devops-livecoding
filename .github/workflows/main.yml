@@ -25,7 +25,7 @@ jobs:
         run: mvn clean verify --file ./simple-api/pom.xml
 
       - name: SonarQube analysis
-        run: mvn -B verify sonar:sonar -Dsonar.Luc-flament6222eae3=devops-2024 -Dsonar.organization=devops-school -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }} --file ./simple-api/pom.xml
+        run: mvn -B verify sonar:sonar -Dsonar.Luc-Flament_devops-livecoding=devops-2024 -Dsonar.luc-flament=devops-school -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }} --file ./simple-api/pom.xml
 
 
   # define job to build and publish docker image
