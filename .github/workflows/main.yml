@@ -20,7 +20,7 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
 
-     #finally build your app with the latest command
+     #finally build your app with the latest command yea
       - name: Build and test with Maven
         run: mvn clean verify --file ./simple-api/pom.xml
 
