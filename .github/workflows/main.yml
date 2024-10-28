@@ -29,7 +29,7 @@ jobs:
         # DO the same for database
         uses: docker/build-push-action@v3
         with:
-          context: ./simple-database
+          context: ./database
           tags: ${{secrets.DOCKERHUB_USERNAME}}/tp-devops-simple-database:latest
 
 
@@ -37,7 +37,7 @@ jobs:
         # DO the same for httpd
         uses: docker/build-push-action@v3
         with:
-          context: ./simple-http-server
+          context: ./http-server
           tags: ${{secrets.DOCKERHUB_USERNAME}}/tp-devops-simple-httpd:latest
 
   test-backend: 
